@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head> 
+<title>
+	Menikö tunteisiin?
+	</title>
+
+	
+
+
+	
+
+	<style>
+
+
+
+
+
+
+
+
+		body {
+  background: lightblue url("bg.jpg") no-repeat fixed center;
+}
+
+	#otsikkolaatikko {
+		font-size : 40px;
+		color : #ff1493;
+		border : 3px #ff80ed outset;
+		width : 105px;
+		height : 40px;
+		position : absolute;
+		top : 50px;
+		left : 750px;
+		background-color : #ffb6c1;
+		padding : 40px;
+		font-family : Fantasy;
+		text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+		border-radius : 1000px;
+	}
+
+	#keskilaatikko {
+
+		position : absolute;
+		top : 250px;
+		left : 600px;
+		font-size : 40px;
+		overflow: auto;
+		width : 400px;
+		height : 140px;
+		border : 3px #ff80ed outset;
+		padding : 40px;
+		
+
+
+	}
+
+
+	
+	.sivulinkki{
+		text-decoration : none;
+		color : #ff1493;
+		}
+	
+
+
+	.sivulinkki:hover {
+		text-decoration-line: overline underline;
+  		text-decoration-style: wavy;
+		color : #ff1493;
+		
+		}
+
+
+	#linkkilaatikko1 {
+		position : absolute;
+		width:100px;
+		height:100px;
+		border:solid 1px #000000;
+		padding : 20px;
+		top : 20px;
+		background-color : #ff1493;
+
+	}
+
+	#linkkilaatikot {
+		position : absolute;
+		top : 250px;
+		left : 450px;
+		font-size : 40px;
+		overflow: auto;
+		width : 700px;
+		height : 180px;
+		border : 3px #ff80ed outset;
+		padding : 40px;	
+		border-radius : 50px;
+		background: url("PAB.jpg") no-repeat fixed;
+		background-size : 900px;
+		background-position : 350px 100px;
+
+		}
+
+	#potion {
+		position : absolute;
+		animation-fill-mode: forwards;
+		animation: myanp 3.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+
+
+
+
+
+	}
+
+		
+	
+
+	@keyframes myanp {
+  0% {left: 0px; top: 0px; trasnform: rotateY(0deg);} 
+  50% {left: 0px; top: 40px; trasnform: rotateY(180deg);}
+  100% {left: 0px; top: 0px; trasnform: rotateY(360deg);}
+}
+
+
+	//@keyframes myanp {
+		0% {trasnform: rotateY(0deg);}
+		25% {trasnform: rotateY(90deg);}
+		50% {trasnform: rotateY(180deg);}
+		75% {trasnform: rotateY(270deg);}
+		100% {trasnform: rotateY(360deg);}
+
+
+	}
+
+	</style>
+
+</head>
+
+
+<body>
+
+
+	
+	<div id="potion"> 
+		<img src="potion.webp"  width="100px" /><br />
+	</div>
+
+	<div id="otsikkolaatikko">
+	LINKIT
+	</div>
+<!--
+	<div id="keskilaatikko">
+		<a href="https://www.youtube.com" class="sivulinkki">youtube</a><br />
+			
+	</div>
+-->
+
+	<div id="linkkilaatikot">
+	<a href="https://www.youtube.com" target="_blank">
+	<div id="linkkilaatikko1">
+	<img src="abt.webp"  width="50px"/><br />
+	LINKIT
+	</div>
+	</a>
+
+	
+	</div>
+
+</body>
+
+</html>
+
+
