@@ -25,7 +25,7 @@
 }
 
 	#otsikkolaatikko {
-		font-size : 40px;
+		font-size : 30px;
 		color : #ff1493;
 		border : 3px #ff80ed outset;
 		width : 105px;
@@ -43,10 +43,10 @@
 	#keskilaatikko {
 
 		position : absolute;
-		top : 250px;
-		left : 600px;
+		top : 25px;
+		left : 10px;
 		font-size : 40px;
-		overflow: auto;
+		overflow: visible;
 		width : 400px;
 		height : 140px;
 		border : 3px #ff80ed outset;
@@ -73,7 +73,22 @@
 		}
 
 
-	#linkkilaatikko1 {
+		#linkkilaatikko1 {
+		
+		width:130px;
+		height:130px;
+		border:solid 1px #000000;
+		padding : 20px;
+		top : 20px;
+		background-color : #ffb6dc;
+		font-family : Fantasy;
+		border-radius : 25px;
+		font-size : 20px;
+		
+
+	}
+
+	#linkkilaatikko2 {
 		position : absolute;
 		width:100px;
 		height:100px;
@@ -81,15 +96,29 @@
 		padding : 20px;
 		top : 20px;
 		background-color : #ff1493;
+		left : 200px;
 
 	}
+
+	#linkkilaatikko3 {
+		position : absolute;
+		width:100px;
+		height:100px;
+		border:solid 1px #000000;
+		padding : 20px;
+		top : 20px;
+		background-color : #ff1493;
+		left : 360px;
+
+	}
+	
 
 	#linkkilaatikot {
 		position : absolute;
 		top : 250px;
 		left : 450px;
 		font-size : 40px;
-		overflow: auto;
+		overflow: none;
 		width : 700px;
 		height : 180px;
 		border : 3px #ff80ed outset;
@@ -98,9 +127,15 @@
 		background: url("PAB.jpg") no-repeat fixed;
 		background-size : 900px;
 		background-position : 350px 100px;
+		
 
 		}
 
+		
+
+		
+		
+	
 	#potion {
 		position : absolute;
 		animation-fill-mode: forwards;
@@ -114,13 +149,59 @@
 
 	}
 
+
+	.card {
+		width: 190px;	
+		height: 190px;
+		background: black;
+		position: relative;
+		display: flex;
+		place-content: center;
+		place-items: center;
+		overflow: hidden;
+		border-radius: 20px;
+
+	}
 		
-	
+	.card h2 {
+		z-index: 1;
+		color: rgb(255, 48, 255) ;
+		font-size: 1em;
+		text-decoration-line: underline;
+		text-decoration-color: #ff80ed;
+	}
+	.card::before {
+		content: '';
+		position: absolute;
+		width: 100px;
+		background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+		height: 130%;
+		animation: rotBGimg 3s linear infinite;
+		transition: all 0.2s linear;
+
+	}
+
+	@keyframes rotBGimg {
+		from{
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.card::after {
+		content: "";
+		position: absolute;
+		background: #000000;
+		inset: 5px;
+		border-radius: 15px;
+	}
 
 	@keyframes myanp {
-  0% {left: 0px; top: 0px; trasnform: rotateY(0deg);} 
-  50% {left: 0px; top: 40px; trasnform: rotateY(180deg);}
-  100% {left: 0px; top: 0px; trasnform: rotateY(360deg);}
+  0% {left: 0px; top: 0px; transform: rotateY(0deg);} 
+  50% {left: 0px; top: 40px; transform: rotateY(180deg);}
+  100% {left: 0px; top: 0px; transform: rotateY(360deg);}
 }
 
 
@@ -142,13 +223,14 @@
 <body>
 
 
+
 	
 	<div id="potion"> 
 		<img src="potion.webp"  width="100px" /><br />
 	</div>
 
 	<div id="otsikkolaatikko">
-	LINKIT
+	SIVUSTOT
 	</div>
 <!--
 	<div id="keskilaatikko">
@@ -157,16 +239,52 @@
 	</div>
 -->
 
+
 	<div id="linkkilaatikot">
-	<a href="https://www.youtube.com" target="_blank">
+<!--
+	<a href="https://www.instagram.com/" target="_blank">
 	<div id="linkkilaatikko1">
-	<img src="abt.webp"  width="50px"/><br />
-	LINKIT
+	<img src="ig-removebg-preview.png"  width="100px"/><br />
+	INSTAGRAMCHIK
 	</div>
 	</a>
 
-	
+
+	<a href="https://www.youtube.com" target="_blank">
+	<div id="linkkilaatikko2">
+	<img src="abt.webp"  width="50px"/><br />
+	YOUTUBCHIK
 	</div>
+	</a>
+
+
+	<a href="https://www.youtube.com" target="_blank">
+		<div id="linkkilaatikko3">
+		<img src="abt.webp"  width="50px"/><br />
+		CLASSROOMCHIK
+		</div>
+		</a>
+
+	<a href="https://www.youtube.com" target="_blank">
+		<div id="linkkilaatikko3">
+		<img src="abt.webp"  width="50px"/><br />
+		CLASSROOMCHIK
+		</div>
+		</a>
+-->
+		<a href="https://www.instagram.com/" target="_blank">
+		<div class="card">
+			<h2>instagram</h2>
+	
+		</div>
+		</a>
+	
+
+	</div>
+	
+	
+	
+		
 
 </body>
 
